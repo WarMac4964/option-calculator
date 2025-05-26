@@ -34454,7 +34454,7 @@ s=this.f
 s.L$=r
 s.y2$=0
 this.aD()},
-N(a){var s,r,q,p=this,o=null,n=t.E,m=A.akV(A.c([B.BW,B.JS,A.eA("Options Calculator",o,o,o,A.o6().$3$color$fontSize$fontWeight(B.k,22,B.cb),o,o)],n),B.bO,B.bl,B.cN),l=A.fR(16),k=A.Df(A.c([A.eA("Put Options (A)",o,o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o,o),B.wL,A.alt(p.e,B.C_,new A.kR(2,!1,!0),new A.a7k()),B.jl,A.eA("Call Options (B)",o,o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o,o),B.wL,A.alt(p.f,B.BZ,new A.kR(2,!1,!0),new A.a7l()),B.JT,A.no(new A.E1(p.gWT(),o,o,o,A.asC(o,o,B.A9,o,o,o,o,o,o,B.l,o,o,B.B8,o,new A.cd(A.fR(10),B.q),o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o),o,o,!1,o,!0,o,B.OV,o),o,1/0)],n),B.bN,B.bl,B.cN)
+N(a){var s,r,q,p=this,o=null,n=t.E,m=A.akV(A.c([B.BW,B.JS,A.eA("Options Calculator",o,o,o,A.o6().$3$color$fontSize$fontWeight(B.k,22,B.cb),o,o)],n),B.bO,B.bl,B.cN),l=A.fR(16),k=A.Df(A.c([A.eA("Put Options (A)",o,o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o,o),B.wL,A.alt(p.e,B.C_,new A.kR(2,!0,!0),new A.a7k()),B.jl,A.eA("Call Options (B)",o,o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o,o),B.wL,A.alt(p.f,B.BZ,new A.kR(2,!1,!0),new A.a7l()),B.JT,A.no(new A.E1(p.gWT(),o,o,o,A.asC(o,o,B.A9,o,o,o,o,o,o,B.l,o,o,B.B8,o,new A.cd(A.fR(10),B.q),o,o,A.o6().$2$fontSize$fontWeight(16,B.cb),o),o,o,!1,o,!0,o,B.OV,o),o,1/0)],n),B.bN,B.bl,B.cN)
 l=A.c([A.aiq(new A.cY(B.i3,new A.uC(k,B.hv,p.d),o),B.kL,new A.cd(l,B.q)),B.jl],n)
 if(p.r!=null){k=A.fR(16)
 s=A.c([A.eA("Results",o,o,o,A.o6().$2$fontSize$fontWeight(18,B.bw),o,o),B.jl],n)
@@ -34478,17 +34478,13 @@ s.r=null
 s.w=!0},
 $S:0}
 A.a7k.prototype={
-$1(a){var s
-if(a.length===0)return"Please enter a value"
-s=A.a0M(a)
-if(s==null||s<=0)return"Please enter a positive number"
+$1(a){if(a.length===0)return"Please enter a value"
+if(A.a0M(a)==null)return"Please enter a valid number"
 return null},
 $S:108}
 A.a7l.prototype={
-$1(a){var s
-if(a.length===0)return"Please enter a value"
-s=A.a0M(a)
-if(s==null||s<=0)return"Please enter a positive number"
+$1(a){if(a.length===0)return"Please enter a value"
+if(A.a0M(a)==null)return"Please enter a valid number"
 return null},
 $S:108}
 A.a7m.prototype={
